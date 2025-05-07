@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>raeby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/my-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      style="
+        background-color: #b9d1a6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 2rem;
+      "
+    >
+      <h1 style="margin: 0; text-align: left">raeby</h1>
+      <nav style="padding: 0.5rem">
+        <ul
+          style="
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          <li><a href="#welcome">home</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="resume.html">resume</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="welcome">
+      <img src="assets/plaidwave.jpg" alt="Background" class="bg-img" />
+      <a name="welcome"></a>
+      <h1
+        class="typing-text"
+        style="
+          font-family: 'Abalone Smile', cursive;
+          font-size: 64px;
+          background-color: #b9d1a6;
+          color: white;
+          text-align: center;
+          padding: 10px 40px 10px 40px;
+          width: 500px;
+          margin: 80px auto;
+          border-radius: 95px;
+        "
+      >
+        my portfolio :3
+      </h1>
+
+      <section
+        class="w3-container"
+        style="
+          padding-top: 20px;
+          padding-bottom: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          flex-wrap: wrap;
+        "
+      >
+        <img
+          src="assets/paperfied logo.png"
+          class="tilt-hover"
+          alt="Koga Café"
+          style="
+            width: 200px;
+            height: auto;
+            max-width: 100%;
+            padding: 25px 0;
+            padding-bottom: 60px;
+            padding-top: 10px;
+          "
+        />
+
+        <div
+          style="
+            max-width: 500px;
+            text-align: left;
+            font-size: 18px;
+            padding: 20px;
+            padding-bottom: 60px;
+            padding-top: 20px;
+          "
+        >
+          <p>
+            I'm an aspiring <strong>UX/UI designer</strong>
+            with an excellent sense of usability and creativity. I began my
+            design career with the straightforward goal of improving how people
+            use technology. Every interface has a narrative to tell, and I'm
+            committed to creating experiences that are not only aesthetically
+            pleasing but also practical and significant. I'm eager to network
+            with other creatives and look into chances that will enable me to
+            transform my concepts into powerful designs as I set out on my
+            adventure. Let's create something amazing together!
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" style="padding-top: 10px">
+        <a name="projects"></a>
+        <br />
+
+        <h1
+          style="
+            font-family: 'Abalone Smile', cursive;
+            font-size: 64px;
+            background-color: #b9d1a6;
+            color: white;
+            text-align: center;
+            padding: 10px 40px 20px 40px;
+            width: 500px;
+            margin: 50px auto;
+            border-radius: 75px;
+          "
+        >
+          my projects!
+        </h1>
+
+        <p
+          class="w3-container"
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            background-color: #b9d1a6;
+            font-size: 28px;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          "
+        >
+          sketchy cat
+        </p>
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const images = document.querySelectorAll(".zoom-image");
+
+          images.forEach((img) => {
+            img.addEventListener("mouseenter", () => {
+              img.style.filter = "brightness(60%)";
+              img.style.transition = "filter 0.3s ease";
+            });
+
+            img.addEventListener("mouseleave", () => {
+              img.style.filter = "brightness(100%)";
+            });
+          });
+        });
+      </script>
+      <div class="image-gallery-container">
+        <section class="w3-row-padding" style="padding-bottom: 20px">
+          <article class="w3-col s12 m4 l4">
+            <h4>bus shelter ad</h4>
+            <p>
+              <img src="assets/busv1.png" alt="croissant" class="zoom-image" />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>instagram ad<br /></h4>
+            <p>
+              <img
+                src="assets/instawimg.png"
+                alt="onigiri"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>sketchy website<br /></h4>
+            <p>
+              <img
+                src="assets/sketchysite.jpg"
+                alt="eggrice"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>packing box<br /></h4>
+            <p>
+              <img
+                src="assets/mailbox-sketchy.jpg"
+                alt="eggrice"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>packing box<br /></h4>
+            <p>
+              <img
+                src="assets/mailbox-sketchy.jpg"
+                alt="eggrice"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>packing box<br /></h4>
+            <p>
+              <img
+                src="assets/mailbox-sketchy.jpg"
+                alt="eggrice"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+        </section>
+      </div>
+      <div id="image-popup" class="popup-overlay">
+        <span class="close-btn">&times;</span>
+        <img id="popup-img" src="" alt="Full Image" />
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const popup = document.getElementById("image-popup");
+          const popupImg = document.getElementById("popup-img");
+          const closeBtn = document.querySelector(".close-btn");
+          const images = document.querySelectorAll(".zoom-image");
+
+          images.forEach((img) => {
+            img.addEventListener("click", () => {
+              popupImg.src = img.src;
+              popup.style.display = "flex";
+            });
+          });
+
+          closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+          });
+
+          popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+              popup.style.display = "none";
+            }
+          });
+        });
+      </script>
+
+      <p
+        class="w3-container"
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bolder;
+          background-color: #b9d1a6;
+          font-size: 28px;
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        "
+      >
+        music app ui
+      </p>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const images = document.querySelectorAll(".zoom-image");
+
+          images.forEach((img) => {
+            img.addEventListener("mouseenter", () => {
+              img.style.filter = "brightness(60%)";
+              img.style.transition = "filter 0.3s ease";
+            });
+
+            img.addEventListener("mouseleave", () => {
+              img.style.filter = "brightness(100%)";
+            });
+          });
+        });
+      </script>
+      <div class="image-gallery-container">
+        <section class="w3-row-padding" style="padding-bottom: 20px">
+          <article class="w3-col s12 m4 l4">
+            <h4>bus shelter ad</h4>
+            <p>
+              <img src="assets/busv1.png" alt="croissant" class="zoom-image" />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>instagram ad<br /></h4>
+            <p>
+              <img
+                src="assets/instawimg.png"
+                alt="onigiri"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>sketchy website<br /></h4>
+            <p>
+              <img
+                src="assets/sketchysite.jpg"
+                alt="eggrice"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+          <article class="w3-col s12 m4 l4">
+            <h4>packing box<br /></h4>
+            <p>
+              <img
+                src="assets/mailbox-sketchy.jpg"
+                alt="eggrice"
+                class="zoom-image"
+              />
+            </p>
+          </article>
+        </section>
+      </div>
+      <div id="image-popup" class="popup-overlay">
+        <span class="close-btn">&times;</span>
+        <img id="popup-img" src="" alt="Full Image" />
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const popup = document.getElementById("image-popup");
+          const popupImg = document.getElementById("popup-img");
+          const closeBtn = document.querySelector(".close-btn");
+          const images = document.querySelectorAll(".zoom-image");
+
+          images.forEach((img) => {
+            img.addEventListener("click", () => {
+              popupImg.src = img.src;
+              popup.style.display = "flex";
+            });
+          });
+
+          closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+          });
+
+          popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+              popup.style.display = "none";
+            }
+          });
+        });
+      </script>
+
+      <p
+        class="w3-container"
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bolder;
+          background-color: #b9d1a6;
+          font-size: 28px;
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        "
+      >
+        others
+      </p>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const images = document.querySelectorAll(".zoom-image");
+
+        images.forEach((img) => {
+          img.addEventListener("mouseenter", () => {
+            img.style.filter = "brightness(60%)";
+            img.style.transition = "filter 0.3s ease";
+          });
+
+          img.addEventListener("mouseleave", () => {
+            img.style.filter = "brightness(100%)";
+          });
+        });
+      });
+    </script>
+    <div class="image-gallery-container">
+      <section class="w3-row-padding" style="scroll-padding-bottom: 20px">
+        <article class="w3-col s12 m4 l4">
+          <h4>bus shelter ad</h4>
+          <p>
+            <img src="assets/busv1.png" alt="croissant" class="zoom-image" />
+          </p>
+        </article>
+        <article class="w3-col s12 m4 l4">
+          <h4>instagram ad<br /></h4>
+          <p>
+            <img src="assets/instawimg.png" alt="onigiri" class="zoom-image" />
+          </p>
+        </article>
+        <article class="w3-col s12 m4 l4">
+          <h4>sketchy website<br /></h4>
+          <p>
+            <img
+              src="assets/sketchysite.jpg"
+              alt="eggrice"
+              class="zoom-image"
+            />
+          </p>
+        </article>
+        <article class="w3-col s12 m4 l4">
+          <h4>packing box<br /></h4>
+          <p>
+            <img
+              src="assets/mailbox-sketchy.jpg"
+              alt="eggrice"
+              class="zoom-image"
+            />
+          </p>
+        </article>
+      </section>
+    </div>
+    <div id="image-popup" class="popup-overlay">
+      <span class="close-btn">&times;</span>
+      <img id="popup-img" src="" alt="Full Image" />
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const popup = document.getElementById("image-popup");
+        const popupImg = document.getElementById("popup-img");
+        const closeBtn = document.querySelector(".close-btn");
+        const images = document.querySelectorAll(".zoom-image");
+
+        images.forEach((img) => {
+          img.addEventListener("click", () => {
+            popupImg.src = img.src;
+            popup.style.display = "flex";
+          });
+        });
+
+        closeBtn.addEventListener("click", () => {
+          popup.style.display = "none";
+        });
+
+        popup.addEventListener("click", (e) => {
+          if (e.target === popup) {
+            popup.style.display = "none";
+          }
+        });
+      });
+    </script>
+
+    <p id="date"></p>
+    <script>
+      var d = new Date();
+      document.getElementById("date").innerHTML = d;
+    </script>
+    <footer class="footer-container" id="footer" class="footer">
+      <a name="footer"></a>
+      <h5 style="font-family: 'Abalone Smile', cursive; font-size: 34px">
+        contact us
+      </h5>
+
+      <p>
+        number - 123-456-7890 <br />
+        address - new york, new york <br />
+        gmail - raeyisa@gmail.com
+      </p>
+      <p>&copy; 2025 All rights reserved.</p>
+    </footer>
+  </body>
+</html>

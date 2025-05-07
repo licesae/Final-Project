@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raeby.com</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/my-styles.css" />
+    <style>
+      header {
+        background-color: #b9d1a6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 2rem;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* HEY !!! Main container for centered layout */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEY !!! Full-width header (outside container) -->
+    <header>
+      <h1 style="margin: 0; text-align: left">raeby</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html">projects</a></li>
+          <li><a href="resume.html">resume</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HEY !! Centered content inside the container -->
+    <div class="container">
+      <div class="fcf-body">
+        <div id="fcf-form">
+          <h3 class="fcf-h3">Contact us</h3>
+          <form
+            id="fcf-form-id"
+            class="fcf-form-class"
+            method="post"
+            action="https://formsubmit.co/rba459b89f631c1bfecb2b4e6f44cc0cc"
+          >
+            <div class="fcf-form-group">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                  class="fcf-form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                <input
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  class="fcf-form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                <textarea
+                  id="Message"
+                  name="Message"
+                  class="fcf-form-control"
+                  rows="6"
+                  maxlength="3000"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <button
+                type="submit"
+                id="fcf-button"
+                class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div class="fcf-credit" id="fcf-credit">
+              Simple HTML email form provided by
+              <a href="https://www.majesticform.com" target="_blank"
+                >MajesticForm</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
